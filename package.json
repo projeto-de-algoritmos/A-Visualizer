@@ -1,0 +1,18 @@
+{
+  "name": "parser_combinators",
+  "version": "1.0.0",
+  "description": "Parser combinators in javascript. Why? For Fun! :)",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Albino",
+  "license": "ISC",
+  "dependencies": {
+    "global": "^4.4.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.6.2"
+  }
+}
