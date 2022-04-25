@@ -154,14 +154,14 @@ class Maze {
     if (cell.visited) {
       background = "red";
     }
+    if(this.forwardPath.includes(cell)) {
+      background = "orange";
+    }
     if (cell.x === this.startPos.x && cell.y === this.startPos.y) {
       background = "green";
     }
     if (cell.x === this.endPos.x && cell.y === this.endPos.y) {
       background = "blue";
-    }
-    if(this.forwardPath.includes(cell)) {
-      background = "orange";
     }
     this.context.fillStyle = background;
     this.context.fillRect(cell.x * this.cellWidth, cell.y * this.cellHeight, this.cellWidth, this.cellHeight);

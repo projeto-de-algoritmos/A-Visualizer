@@ -4,7 +4,7 @@ import MazeModel from './../model/Maze';
 import Cell from "../model/Cell";
 
 const Maze = function(){
-  const width = 800, height = 600, gridWith = width / 100, gridHeight = height / 100;
+  const width = 800, height = 600, gridWith = width / 10, gridHeight = height / 10;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [context, setContext] = useState<CanvasRenderingContext2D | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +36,7 @@ const Maze = function(){
 
   const animate = (timeStamp: number) => {
     if(!maze) return
-    if(timeStamp - lastFrameUpdate < 1000/2) {
+    if(timeStamp - lastFrameUpdate < 1000/ 60) {
       requestAnimationFrame(animate);
       return;
     }
