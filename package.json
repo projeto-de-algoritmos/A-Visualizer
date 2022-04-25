@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "generate-maze": "^1.1.0",
-    "heap": "^0.2.7"
-  },
-  "devDependencies": {
-    "@types/heap": "^0.2.30"
-  }
-}
